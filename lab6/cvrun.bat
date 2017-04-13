@@ -1,0 +1,2 @@
+cv main.exe
+pause
