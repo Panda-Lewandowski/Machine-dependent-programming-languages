@@ -40,3 +40,5 @@
 
     cv main.exe
     pause
+    
+ <i>COMMENT: </i>Sorry, but tasks will be in Russian. I've no possibility to rewrite it in English.
