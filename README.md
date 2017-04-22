@@ -5,9 +5,9 @@
 
 | List of Labs  |     Stage     |      Task     |
 | ------------- |:-------------:|:-------------:|
-| Lab 1 |✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
-| Lab 2| ✓ |<a href="/wiki/Lab-2">wiki</a>|
-| Lab 3| ✓ |<a href="/wiki/Lab-2">wiki</a>|
+| Lab 1 |✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
+| Lab 2| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-2">wiki</a>|
+| Lab 3| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
 | Lab 4| ✓ ||
 | Lab 5| ✓ ||
 | Lab 6| ✓ ||
