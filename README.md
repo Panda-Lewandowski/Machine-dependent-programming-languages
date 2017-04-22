@@ -1,11 +1,11 @@
-# Assembler
+# Machine dependent programming languages
     2nd course, 4th semester
 
     Bauman Moscow State Technical University
 
 | List of Labs  |     Stage     |      Task     |
 | ------------- |:-------------:|:-------------:|
-| Lab 1 |✓ |wiki|
+| Lab 1 |✓ |<a href="wiki/Lab-1">wiki</a>|
 | Lab 2| ✓ |wiki|
 | Lab 3| ✓ |wiki|
 | Lab 4| ✓ ||
