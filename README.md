@@ -5,13 +5,13 @@
 
 | List of Labs  |     Stage     |      Task     |
 | ------------- |:-------------:|:-------------:|
-| Lab 1 |✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
-| Lab 2| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-2">wiki</a>|
-| Lab 3| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
+| Lab 1 |✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
+| Lab 2| ✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-2">wiki</a>|
+| Lab 3| ✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
 | Lab 4| ✓ ||
 | Lab 5| ✓ ||
 | Lab 6| ✓ ||
-| Lab 7|  ||
+| Lab 7| ✓ ||
 |Factorial| ✓ ||
 |Transpose| ✓ ||
 
@@ -20,7 +20,8 @@
 <li><i><b>CV.exe</b> debugger</i>
 <li><i><b>MASM.exe</b> assembler</i>
 <li><i><b>AFD.exe</b> debugger</i>
-<li><i><b>link.exe</b> linker, just linker</i></ul>
+<li><i><b>link.exe</b> linker, just linker</i>
+<li><i><b>tasm32.exe</b></i></ul>
 
 <i><b>Example of "make"-like bat file</b>( `/zi` and `/co` are required for CV)</i>
 
