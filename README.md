@@ -21,7 +21,7 @@
 <li><i><b>MASM.exe</b> assembler</i>
 <li><i><b>AFD.exe</b> debugger</i>
 <li><i><b>link.exe</b> linker, just linker</i>
-<li><i><b>tasm32.exe</b></i></ul>
+<li><i><b>tasm32.exe</b> assembler, it can be used with Borland's high-level language compilers, such as Turbo Pascal, Turbo Basic, Turbo C and Turbo C++.</i></ul>
 
 <i><b>Example of "make"-like bat file</b>( `/zi` and `/co` are required for CV)</i>
 
