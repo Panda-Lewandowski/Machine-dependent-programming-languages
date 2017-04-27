@@ -10,8 +10,8 @@
 | Lab 3| ✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
 | Lab 4| ✓ ||
 | Lab 5| ✓ ||
-| Lab 6| ✓ ||
-| Lab 7| ✓ ||
+| Lab 6| ✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-6">wiki</a>|
+| Lab 7| ✓ |<a href="Machine-dependent-programming-languages/wiki/Lab-7">wiki</a>|
 |Factorial| ✓ ||
 |Transpose| ✓ ||
 
