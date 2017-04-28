@@ -5,16 +5,16 @@
 
 | List of Labs  |     Stage     |      Task     |
 | ------------- |:-------------:|:-------------:|
-| Lab 1 |✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
-| Lab 2| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-2">wiki</a>|
-| Lab 3| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
-| Lab 4| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
-| Lab 5| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
-| Lab 6| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-6">wiki</a>|
-| Lab 7| ✓ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-7">wiki</a>|
-|Factorial| ✓ |––|
-|Transpose| ✓ |––|
-|Sorting| ✓ |––|
+| Lab 1| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-1">wiki</a>|
+| Lab 2| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-2">wiki</a>|
+| Lab 3| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-3">wiki</a>|
+| Lab 4| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
+| Lab 5| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
+| Lab 6| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-6">wiki</a>|
+| Lab 7| ⚠️ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-7">wiki</a>|
+|Factorial| ✅ |––|
+|Transpose| ✅ |––|
+|Sorting| ✅ |––|
 
 <ul><li><i><b>Encoding:</b> Windows 1251 </i>
 <li><i><b>Enviroment:</b>Windows XP</i>
@@ -43,4 +43,11 @@
     cv main.exe
     pause
     
+ #### <i>Legend:</i>
+<ul>
+<li>✅ - ОК
+<li>⚠️ - problem
+<li>🆘 - need help
+</ul>   
+
  <i>COMMENT: </i>Sorry, but tasks will be in Russian. I've no possibility to rewrite it in English.
