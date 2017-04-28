@@ -19,8 +19,6 @@ P EQU DWORD PTR[EBP+8]          ;параметр
 
   PUSH EBX                      ;сохраняем регистры
   PUSH EDI
-  PUSH ECX
-  PUSH EAX
 
   MOV EDI,N                     ;в EDI грузим длину строки
   SHR EDI,5                     ;сдвигаем на 5 разрядов вправо
@@ -37,8 +35,6 @@ M1:
   NOT EAX                       ;инвертируем EAX
   AND [EBX+EDI*4],EAX           ;операция И над разрядами
 M2:
-  POP EAX                       ;восстановление регистров
-  POP ECX
   POP EDI
   POP EBX
   POP EBP                       ;и указателя EBP

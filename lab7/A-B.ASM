@@ -17,8 +17,6 @@ LAB EQU DWORD PTR[EBP+8]          ;длина строк
 
   PUSH ESI                        ;сохраняем регистры
   PUSH EDI
-  PUSH ECX
-  PUSH EAX
 
   MOV ECX,LAB                     ;CX = l
   SHR ECX,5                       ;сдвигаем на 5 разрядов вправо
@@ -36,8 +34,7 @@ M1:
   LOOP M1                         ;возврат на исходную! (мы гоним этот цикл 2 раза,
                                   ;уменьшая ECX. После равенства его нулю мы идем дальше)
 
-  POP EAX                         ;восстановление регистров
-  POP ECX
+
   POP EDI
   POP ESI
   POP EBP

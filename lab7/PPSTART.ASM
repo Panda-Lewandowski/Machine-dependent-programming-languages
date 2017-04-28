@@ -19,7 +19,7 @@ START:
    CALL COUNT
 
    PUSH OFFSET S1           ;заталкиваем адрес S
-   PUSH 34                  ;разряд S
+   PUSH 1                   ;разряд S
    PUSH 1                   ;параметр P - здесь мы обнуляем 34й разряд
    CALL SetCler             ;S2,34
 
