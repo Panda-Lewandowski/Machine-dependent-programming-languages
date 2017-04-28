@@ -17,7 +17,7 @@
 |Sorting| ✓ |––|
 
 <ul><li><i><b>Encoding:</b> Windows 1251 </i>
-<li><i><b>Enviroment:</b>MS DOS, Windows XP</i>
+<li><i><b>Enviroment:</b>Windows XP</i>
 <li><i><b>CV.exe</b> debugger</i>
 <li><i><b>MASM.exe</b> assembler</i>
 <li><i><b>AFD.exe</b> debugger</i>
