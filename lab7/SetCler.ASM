@@ -10,8 +10,9 @@ PUBLIC SetCler
 
 .CODE
 SetCler PROC
-A EQU DWORD PTR[EBP+16]         ;наша строка
-N EQU DWORD PTR[EBP+12]         ;номер разряда
+A EQU DWORD PTR[EBP+20]         ;наша строка
+N EQU DWORD PTR[EBP+16]         ;номер разряда
+L EQU DWORD PTR[EBP+12]
 P EQU DWORD PTR[EBP+8]          ;параметр
 
   PUSH EBP                      ;пишем старый адрес EBP
@@ -20,16 +21,31 @@ P EQU DWORD PTR[EBP+8]          ;параметр
   PUSH EBX                      ;сохраняем регистры
   PUSH ESI
 
+  MOV ECX, L
   MOV ESI,N                     ;в ESI грузим номер разряда
   MOV EBX,A                     ;адрес строки
   CMP ESI, 32
-  JNA M0
-  ;тут должен быть сдвиг но его нет он потерялся
+  JNA M
+  MOV ECX, L
+  MOV ESI, N
+  SUB ECX, ESI
+  MOV EDX, 0
+  MOV EAX, ECX
+  MOV ESI, 32
+  DIV ESI
 
-M0:
-  MOV EAX, 32                   ;вычисляем сдвиг по старшим битам
-  SUB EAX, ESI
+  MOV EDX, 0
+  MOV ESI, 4
+  MUL ESI
   MOV ESI, EAX
+
+  MOV EBX, A[ESI]
+
+M:
+  MOV EAX, 32                   ;вычисляем сдвиг по старшим битам
+  SUB EAX, ESI                  ;в основной части
+  MOV ESI, EAX
+M0:
   CMP P,0                       ;сравниваем режим с нулем
   JE M1                         ;если равно, то прыг на м1
   BTS [EBX], ESI
