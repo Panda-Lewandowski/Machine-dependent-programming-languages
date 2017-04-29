@@ -18,24 +18,34 @@ P EQU DWORD PTR[EBP+8]          ;параметр
   MOV EBP,ESP                   ;пишем в EBP текущее значение ESP
 
   PUSH EBX                      ;сохраняем регистры
-  PUSH EDI
+  PUSH ESI
 
-  MOV EDI,N                     ;в EDI грузим длину строки
-  SHR EDI,5                     ;сдвигаем на 5 разрядов вправо
-  MOV ECX,N                     ;в ECX кладем "старое" значение EDI
-  AND ECX,11111B                ;деление по модулю 32
-  MOV EAX,1
-  SHL EAX,CL                    ;сдвигаем на то, что осталось в младшей части ECX
-  MOV EBX,A                     ;собственно адрес самой строки
+  MOV ESI,N                     ;в EDI грузим длину строки
+  MOV EBX,A
+  CMP ESI, 32
+  JNA M0
+  SUB ESI, 32
+  MOV EBX, ESI
+  MOV ESI, 32
+  SUB ESI, EBX
+  
+M0:
+  MOV EAX, 32
+  ;MOV ECX,N                      ;номер разряда
+  ;MOV ESI,N
+  SUB EAX, ESI
+  MOV ESI, EAX
   CMP P,0                       ;сравниваем режим с нулем
   JE M1                         ;если равно, то прыг на м1
-  OR [EBX+EDI*4],EAX            ;проставляем единичку в разряд
+  ;OR [EBX+EDI*4],EAX            проставляем единичку в разряд
+  BTS [EBX], ESI
   JMP M2
 M1:
-  NOT EAX                       ;инвертируем EAX
-  AND [EBX+EDI*4],EAX           ;операция И над разрядами
+  ;NOT EAX                       инвертируем EAX
+  ;AND [EBX+EDI*4],EAX           операция И над разрядами
+  BTR [EBX], ESI
 M2:
-  POP EDI
+  POP ESI
   POP EBX
   POP EBP                       ;и указателя EBP
   RET 12
