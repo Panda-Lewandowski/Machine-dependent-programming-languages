@@ -18,29 +18,25 @@ L EQU DWORD PTR[EBP+8]        ;длина строки
   MOV EAX,0                   ;результат
   MOV EBX,A                   ;пишем адрес строки
   MOV ECX,L                   ;длина строки
-  MOV ESI,0 
+  MOV ESI,0                   ;индекс
 
-M0:
-  MOV EDX,1
 M:
-  ;TEST [EBX],EDX              ;сравнение EDX и строки
   BT [EBX], ESI
   JA M2                       ;если 0
   INC EAX                     ;EAX += 1
 M2:
   DEC ECX                     ;уменьшаем значение длины
   JZ M4                       ;до тех пор пока длина != 0, проводим подсчет
-  ;SHL EDX,1                  ;побитовый сдвиг влево, выдвига€ в CX бит
   INC ESI
   JZ M3                       ;если CF = 1, прыг на ћ3
   JMP M                       ;иначе прыг на ћ
 M3:
   ADD EBX,4                   ;по сути это дл€ второго слова уже повтор
-  JMP M0
+  JMP M
 M4:
-  
+
   POP EBX
-  POP EBP                     ;и указател€ EBP
+  POP EBP                     ;восстанавливаем регистры
   RET 8
 END
 

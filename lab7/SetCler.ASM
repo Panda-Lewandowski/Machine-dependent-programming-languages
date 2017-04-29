@@ -20,34 +20,26 @@ P EQU DWORD PTR[EBP+8]          ;параметр
   PUSH EBX                      ;сохраняем регистры
   PUSH ESI
 
-  MOV ESI,N                     ;в EDI грузим длину строки
-  MOV EBX,A
+  MOV ESI,N                     ;в ESI грузим номер разряда
+  MOV EBX,A                     ;адрес строки
   CMP ESI, 32
   JNA M0
-  SUB ESI, 32
-  MOV EBX, ESI
-  MOV ESI, 32
-  SUB ESI, EBX
-  
+  ;тут должен быть сдвиг но его нет он потерялся
+
 M0:
-  MOV EAX, 32
-  ;MOV ECX,N                      ;номер разряда
-  ;MOV ESI,N
+  MOV EAX, 32                   ;вычисляем сдвиг по старшим битам
   SUB EAX, ESI
   MOV ESI, EAX
   CMP P,0                       ;сравниваем режим с нулем
   JE M1                         ;если равно, то прыг на м1
-  ;OR [EBX+EDI*4],EAX            проставляем единичку в разряд
   BTS [EBX], ESI
   JMP M2
 M1:
-  ;NOT EAX                       инвертируем EAX
-  ;AND [EBX+EDI*4],EAX           операция И над разрядами
   BTR [EBX], ESI
 M2:
-  POP ESI
+  POP ESI                       ;восстанавливаем регистры
   POP EBX
-  POP EBP                       ;и указателя EBP
+  POP EBP
   RET 12
 SetCler ENDP
 END
