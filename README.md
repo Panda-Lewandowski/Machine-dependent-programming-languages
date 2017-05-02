@@ -11,7 +11,7 @@
 | Lab 4| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
 | Lab 5| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-4">wiki</a>|
 | Lab 6| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-6">wiki</a>|
-| Lab 7| ⚠️🌀 |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-7">wiki</a>|
+| Lab 7| ✅ |<a href="https://github.com/Panda-Lewandowski/Machine-dependent-programming-languages/wiki/Lab-7">wiki</a>|
 |Factorial| ✅ |––|
 |Transpose| ✅ |––|
 |Sorting| ✅ |––|
