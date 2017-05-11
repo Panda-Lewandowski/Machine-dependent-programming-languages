@@ -1,0 +1,13 @@
+﻿Построение начато 5/11/2017 2:52:25 PM.
+     1>Проект "\\Mac\Home\Desktop\lr09\lr09BitStr\lr09BitStr\lr09BitStr.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_MASM:
+         Assembling A_B.asm...
+         cmd.exe /C "C:\Users\IEUser\AppData\Local\Temp\tmpec6cf0166ecc48cbb833b253b488f44a.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\A_B.obj" /W3 /errorReport:prompt  /TaA_B.asm
+     1>MASM : fatal error A1000: cannot open file : A_B.asm
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V110\BuildCustomizations\masm.targets(49,5): error MSB3721: выход из команды "ml.exe /c /nologo /Zi /Fo"Debug\A_B.obj" /W3 /errorReport:prompt  /TaA_B.asm" с кодом "1".
+     1>Построение проекта "\\Mac\Home\Desktop\lr09\lr09BitStr\lr09BitStr\lr09BitStr.vcxproj" завершено (целевые объекты Rebuild) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:00.51
