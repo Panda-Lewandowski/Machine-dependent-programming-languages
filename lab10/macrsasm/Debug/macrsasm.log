@@ -1,0 +1,18 @@
+﻿Построение начато 5/26/2017 3:33:25 PM.
+     1>Проект "C:\macrsasm\macrsasm\macrsasm.vcxproj" в узле 2 (целевые объекты Build).
+       Файл проекта содержит ToolsVersion="12.0". Данный набор инструментов является неизвестным или отсутствует. Для устранения этой ошибки можно установить для данного набора инструментов соответствующую версию .NET Framework. Считается, что проект содержит ToolsVersion="4.0".
+     1>_MASM:
+         Assembling len.ASM...
+         cmd.exe /C "C:\Users\IEUser\AppData\Local\Temp\tmp0c8403b6e17140768950255aa017e188.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\len.obj" /W3 /errorReport:prompt  /Talen.ASM
+       Link:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\macrsasm\Debug\macrsasm.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\macrsasm\Debug\macrsasm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\macrsasm\Debug\macrsasm.lib" /MACHINE:X86 Debug\macrsasm.obj
+         Debug\stdafx.obj
+         Debug\len.obj
+         Debug\mainasm.obj
+         macrsasm.vcxproj -> C:\macrsasm\Debug\macrsasm.exe
+     1>Построение проекта "C:\macrsasm\macrsasm\macrsasm.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.28
