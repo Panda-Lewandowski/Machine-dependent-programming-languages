@@ -1,0 +1,39 @@
+.386
+.model FLAT,C
+PUBLIC CopyStr
+
+.CODE
+CopyStr:
+  PUSH EBP
+  MOV EBP, ESP
+
+  PUSH ESI
+  PUSH EDI
+
+ 
+  MOV ESI, [EBP + 8]
+  MOV EDI, [EBP + 12]
+  MOV ECX, [EBP + 16]
+
+  CMP EDI, ESI
+  JBE FORWARD
+  MOV EAX, EDI
+  SUB EAX, ESI
+  CMP EAX, ECX
+  JGE FORWARD
+
+FORWARD:
+  CLD
+START:
+  REP MOVSB
+
+  MOV EAX, [EBP+12]
+
+  POP EDI
+  POP ESI
+
+  MOV ESP, EBP
+  POP EBP
+  
+  RET
+END
